@@ -11,11 +11,13 @@ import {
   Text,
   View
 } from 'react-native';
+import * as Progress from 'react-native-progress';
 
 export default class AwesomeProject extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Progress.Circle size={30} indeterminate={true} />
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
